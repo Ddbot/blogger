@@ -6,7 +6,7 @@
 
 <%= render partial: 'comments/form' %>
 
-<h3>Comments</h3>
+<h3><%= @article.comments.count %> Comments</h3>
 <%= render partial: 'comment', collection: @article.comments %>
 
 <%= link_to "List of Articles", articles_path %>
